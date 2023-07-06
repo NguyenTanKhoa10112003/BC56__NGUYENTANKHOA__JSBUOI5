@@ -17,9 +17,9 @@ function tinhTienNhaDan(soKenhCaoCap) {
 function tinhTienDoanhNghiep(soKenhCaoCap, soKetNoi) {
   var phiXuLyHoaDon = 15;
   if (soKetNoi <= 10) {
-    var phiDichVuCoBan = soKetNoi * 75;
+    var phiDichVuCoBan = 75;
   } else {
-    var phiDichVuCoBan = soKetNoi * 80;
+    var phiDichVuCoBan = 75 + (soKetNoi - 10) * 80;
   }
   var phiThueKenhCaoCap = soKenhCaoCap * 50;
   var tongTienDoanhNghiep = phiXuLyHoaDon + phiDichVuCoBan + phiThueKenhCaoCap;
